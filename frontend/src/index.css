@@ -1,0 +1,354 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #f5f7ff;
+  color: #1e293b;
+}
+
+/* ---------- Common ---------- */
+
+button {
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 11px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  opacity: 0.92;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  border: 1px solid #dbe1ea;
+  border-radius: 10px;
+  font-size: 14px;
+  background: #fff;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+/* ---------- Login ---------- */
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+}
+
+.auth-card {
+  width: 410px;
+  background: white;
+  padding: 42px;
+  border-radius: 22px;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.12);
+  text-align: center;
+}
+
+.auth-card h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  color: #312e81;
+}
+
+.auth-card > p {
+  color: #64748b;
+  margin-bottom: 28px;
+}
+
+.auth-card button {
+  width: 100%;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+}
+
+.switch {
+  cursor: pointer;
+  color: #4f46e5 !important;
+  font-weight: 600;
+  margin-top: 20px !important;
+}
+
+/* ---------- Dashboard ---------- */
+
+.dashboard {
+  min-height: 100vh;
+}
+
+/* ---------- Header ---------- */
+
+header {
+  background: linear-gradient(135deg, #312e81, #4f46e5);
+  color: white;
+  padding: 24px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 20px rgba(49, 46, 129, 0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 27px;
+}
+
+header p {
+  margin: 6px 0 0;
+  color: #e0e7ff;
+}
+
+header button {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+header button:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* ---------- Main ---------- */
+
+main {
+  width: 90%;
+  max-width: 1250px;
+  margin: 32px auto;
+}
+
+/* ---------- Summary Cards ---------- */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.card {
+  background: white;
+  padding: 23px;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(15, 23, 42, 0.06);
+  border: 1px solid #eef0f5;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background: #6366f1;
+}
+
+.card h3 {
+  margin: 0 0 12px;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 25px;
+  color: #1e293b;
+}
+
+/* ---------- Panels ---------- */
+
+.panel {
+  background: white;
+  padding: 25px;
+  border-radius: 17px;
+  box-shadow: 0 5px 20px rgba(15, 23, 42, 0.06);
+  border: 1px solid #eef0f5;
+  margin-bottom: 24px;
+}
+
+.panel h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 21px;
+  color: #1e293b;
+}
+
+.panel h3 {
+  color: #334155;
+}
+
+/* ---------- Grid ---------- */
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+/* ---------- Forms ---------- */
+
+.panel form button {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+}
+
+.panel form button[type="button"] {
+  background: #e2e8f0;
+  color: #334155;
+}
+
+/* ---------- AI Note ---------- */
+
+.ai-note {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 10px;
+  background: #eef2ff;
+  color: #4f46e5;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ---------- Insights ---------- */
+
+.insight {
+  padding: 14px 16px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid #6366f1;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: #334155;
+}
+
+/* ---------- Prediction ---------- */
+
+.prediction {
+  margin-top: 20px;
+  padding: 22px;
+  background: linear-gradient(135deg, #eef2ff, #f5f3ff);
+  border-radius: 13px;
+  border: 1px solid #ddd6fe;
+}
+
+.prediction h3 {
+  margin-top: 0;
+}
+
+.prediction h2 {
+  color: #4f46e5;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+/* ---------- Table ---------- */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+th,
+td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+  background: #f8fafc;
+  color: #475569;
+  font-size: 13px;
+}
+
+td {
+  color: #334155;
+  font-size: 14px;
+}
+
+tbody tr:hover {
+  background: #f8fafc;
+}
+
+/* ---------- Transaction Buttons ---------- */
+
+td button {
+  padding: 8px 12px;
+  font-size: 13px;
+  background: #eef2ff;
+  color: #4338ca;
+}
+
+td button:last-child {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 21px;
+  }
+
+  main {
+    width: 94%;
+    margin: 20px auto;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .panel {
+    padding: 18px;
+  }
+
+  .auth-card {
+    width: 95%;
+    padding: 30px 22px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
