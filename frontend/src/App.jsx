@@ -9,7 +9,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-const API = "http://127.0.0.1:8000";
+const API = "https://ai-finance-assistant-b6em.onrender.com";
 
 function App() {
   const [token, setToken] = useState(localStorage.getItem("token"));
